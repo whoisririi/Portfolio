@@ -1,5 +1,5 @@
 import React from "react";
-import SkillCard from "./SkillCard";
+import SkillCard from "../components/SkillCard";
 //images
 import moreIcon from "../assets/softwareicons/MoreIcons.png";
 import figmaIcon from "../assets/softwareicons/FigmaIcon.png";

@@ -1,10 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import HeroSection from "../src/components/HeroSection";
-import AboutSection from "../src/components/AboutSection";
-import SoftwaresSection from "./components/SoftwaresSection";
-import ProjectsSection from "./components/ProjectsSection";
-import OthersSection from "./components/OthersSection";
+import HeroSection from "./sections/HeroSection";
+import AboutSection from "./sections/AboutSection";
+import SoftwaresSection from "./sections/SoftwaresSection";
+import ProjectsSection from "./sections/ProjectsSection";
+import OthersSection from "./sections/OthersSection";
+import Footer from "./sections/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <SoftwaresSection />
       <ProjectsSection />
       <OthersSection />
+      <Footer />
     </>
   );
 }

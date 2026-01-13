@@ -11,6 +11,11 @@ export default {
         dirtygold: "#807951",
         rusty: "#404030",
       },
+      fontFamily: {
+        source: ["'Source Sans 3'", "sans-serif"],
+        candal: ["Candal", "sans-serif"],
+        cherry: ["'Cherry Bomb One'", "cursive"],
+      },
     },
   },
   plugins: [],
