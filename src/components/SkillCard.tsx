@@ -1,15 +1,13 @@
-type SkillCardProps = {
-  icon: string;
+interface SkillCardProps {
+  Icon: () => React.ReactNode;
   label: string;
-};
+}
 
-const SkillCard = ({ icon, label }: SkillCardProps) => {
+const SkillCard = ({ Icon, label }: SkillCardProps) => {
   return (
-    <div className="flex flex-col items-center gap-3">
-      <div className="w-36 h-36 rounded-2xl shadow-sm flex items-center justify-center">
-        <img src={icon} alt={label} className="w-12 h-12 object-contain" />
-      </div>
-      <p className="text-sm font-medium text-gray-700 text-center">{label}</p>
+    <div className="flex flex-col items-center gap-2 rounded-xl bg-white p-6">
+      <Icon />
+      <p className="text-sm font-medium">{label}</p>
     </div>
   );
 };

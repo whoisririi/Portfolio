@@ -16,7 +16,7 @@ const ProjectCard = ({
   figmaUrl,
 }: ProjectCardProps) => {
   return (
-    <div className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col">
+    <div className="bg-dirtywhite rounded-2xl shadow-md overflow-hidden flex flex-col">
       {/* Image */}
       <img src={image} alt={name} className="w-full h-48 object-cover" />
 
@@ -44,7 +44,7 @@ const ProjectCard = ({
             <a
               href={figmaUrl}
               target="_blank"
-              className="flex-1 text-center text-sm font-medium px-4 py-2 rounded-full bg-black text-white hover:bg-gray-800 transition"
+              className="flex-1 text-center text-sm font-medium px-4 py-2 rounded-full bg-royalpink text-white hover:bg-lightpink hover:text-dirtygold transition"
             >
               Access Prototype
             </a>
