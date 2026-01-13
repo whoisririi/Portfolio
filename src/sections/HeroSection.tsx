@@ -1,8 +1,5 @@
 import heroSelf from "../assets/images/heroself.png";
 import portfolioText from "../assets/images/portfolio-text.png";
-import ribbonIcon from "../assets/logos/ribbon-icon.png";
-
-import React from "react";
 
 const HeroSection = () => {
   return (
