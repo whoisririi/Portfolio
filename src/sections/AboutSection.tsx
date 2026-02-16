@@ -1,202 +1,81 @@
-import idCard from "../assets/images/idcard.png";
-import TabButton from "../components/TabButton";
-import { useState } from "react";
-import { Phone, Mail, Facebook, Instagram } from "lucide-react";
+import { MapPin, Mail, Phone } from "lucide-react";
+import aboutImg from "../assets/images/aboutimg.jpg";
 
-// tab type
-type TabKey = "education" | "leadership" | "contacts";
+//image part
+const placeholderImage =
+  "https://via.placeholder.com/300x380.png?text=Your+Photo";
 
 const AboutSection = () => {
-  const [activeTab, setActiveTab] = useState<TabKey>("education");
-
   return (
-    <section className="w-full bg-lightpink px-6 py-16">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12">
-        {/* LEFT – IMAGE */}
-        <div className="flex justify-center lg:justify-end lg:w-1/3">
-          <img
-            src={idCard}
-            alt="ID Card"
-            className="w-64 sm:w-72 lg:w-80 object-contain"
-          />
-        </div>
+    <section className="w-full bg-lightpink px-6 py-20">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-16">
+        {/* LEFT SIDE */}
+        <div className="flex flex-col gap-8 lg:w-1/2">
+          {/* HELLO TITLE */}
+          <h1 className="text-6xl sm:text-7xl font-cherry text-dirtygold">
+            Hello!
+          </h1>
 
-        {/* RIGHT – CONTENT */}
-        <div className="flex flex-col gap-8 lg:w-2/3">
-          {/* HEADER */}
+          {/* DESCRIPTION */}
+          <p className="text-base sm:text-lg text-rusty font-candal leading-relaxed max-w-xl">
+            I am a creative Computer Science student specializing in UI/UX
+            design and front-end development. Currently a 4th year student at
+            Pampanga State University. I have experience designing responsive
+            web interfaces and leading student organizations, with a passion for
+            user-centered digital experiences.
+          </p>
+
+          {/* HIGHLIGHT TEXT */}
           <div>
-            <h1 className="font-bold text-4xl sm:text-5xl text-royalpink mb-4">
-              Hi, I'm <span className="text-dirtygold">Ifa Tiffany</span>
-            </h1>
-
-            <p className="text-base sm:text-lg font-semibold font-source text-rusty leading-relaxed">
-              I am a creative Computer Science student specializing in UI/UX
-              design and front-end development. Currently a 4th year student at
-              Pampanga State University. I have experience designing responsive
-              web interfaces and leading student organizations, with a passion
-              for user-centered digital experiences.
+            <p className="font-source font-bold text-dirtygold text-lg">
+              Want to get to know me more?
+            </p>
+            <p className="font-source text-dirtygold font-bold text-lg">
+              Check this out!
             </p>
           </div>
 
-          {/* TAB BUTTONS */}
-          <div className="flex flex-wrap gap-3">
-            <TabButton
-              label="EDUCATION"
-              isActive={activeTab === "education"}
-              onClick={() => setActiveTab("education")}
-            />
-            <TabButton
-              label="LEADERSHIP"
-              isActive={activeTab === "leadership"}
-              onClick={() => setActiveTab("leadership")}
-            />
-            <TabButton
-              label="CONTACTS"
-              isActive={activeTab === "contacts"}
-              onClick={() => setActiveTab("contacts")}
+          {/* RESUME BUTTON */}
+          <button className="w-fit px-6 py-2 border border-royalpink text-royalpink rounded-full font-source font-semibold hover:bg-royalpink hover:text-white transition">
+            Resume
+          </button>
+        </div>
+
+        {/* RIGHT SIDE - PROFILE CARD */}
+        <div className="bg-white rounded-xl shadow-md p-6 w-full max-w-sm">
+          {/* PHOTO */}
+          <div className="w-full h-80 bg-gray-200 rounded-lg overflow-hidden mb-5">
+            <img
+              src={aboutImg}
+              alt="Profile"
+              className="w-full h-full object-cover"
             />
           </div>
 
-          {/* TAB CONTENT (STABLE CONTAINER) */}
-          <div className="bg-pink-100 rounded-xl p-6 min-h-[280px] transition-all">
-            {/* EDUCATION */}
-            {activeTab === "education" && (
-              <div className="space-y-6">
-                <div>
-                  <h2 className="font-bold text-xl text-rusty">
-                    Tertiary – Pampanga State University
-                    <span className="text-textgray font-medium">
-                      {" "}
-                      (2022 – Present)
-                    </span>
-                  </h2>
-                  <p className="italic font-semibold text-textgray">
-                    BS Computer Science
-                  </p>
-                  <p className="italic text-textgray pl-4">
-                    – Dean’s Lister (2022 – Present)
-                  </p>
-                </div>
+          {/* NAME */}
+          <div className="mb-4">
+            <h2 className="font-source font-bold text-lg text-[#404030]">
+              Ifa Dela Rosa{" "}
+              <span className="font-normal text-sm text-gray-500">she/her</span>
+            </h2>
+          </div>
 
-                <div>
-                  <h2 className="font-bold text-xl text-rusty">
-                    Secondary – STI Malolos
-                    <span className="text-textgray font-medium">
-                      {" "}
-                      (2020 – 2022)
-                    </span>
-                  </h2>
-                  <p className="italic font-semibold text-textgray">
-                    STEM Track
-                  </p>
-                  <p className="italic text-textgray pl-4">
-                    – Best Presenter, Product Presentation Champion
-                  </p>
-                  <p className="italic text-textgray pl-4">
-                    – With High Honors
-                  </p>
-                </div>
-              </div>
-            )}
+          {/* LOCATION */}
+          <div className="flex items-center gap-3 text-sm text-[#404030] mb-2">
+            <MapPin size={18} />
+            <span>Mexico, Pampanga</span>
+          </div>
 
-            {/* LEADERSHIP */}
-            {activeTab === "leadership" && (
-              <div className="space-y-6">
-                <div>
-                  <h2 className="font-bold text-lg text-rusty">
-                    Computer Students Society
-                    <span className="text-textgray font-medium">
-                      {" "}
-                      (2022 – 2023)
-                    </span>
-                  </h2>
-                  <p className="italic font-semibold text-textgray">
-                    Public Information Officer
-                  </p>
-                  <p className="italic text-textgray pl-4 text-sm">
-                    – Managed Social Media Contents for the organization
-                    Facebook page (DHVSU – Computer Students Society)
-                  </p>
-                </div>
+          {/* EMAIL */}
+          <div className="flex items-center gap-3 text-sm text-[#404030] mb-2">
+            <Mail size={18} />
+            <span>ifatiffany@gmail.com</span>
+          </div>
 
-                <div>
-                  <h2 className="font-bold text-lg text-rusty">
-                    Collge of Computing Studies Student Council (CCSSC)
-                    <span className="text-textgray font-medium">
-                      {" "}
-                      (2022 – 2024)
-                    </span>
-                  </h2>
-                  <p className="italic font-semibold text-textgray">
-                    Board Member in Gender and Development (BM on GAD)
-                  </p>
-                  <p className="italic text-textgray pl-4 text-sm">
-                    – Applied strategic planning of Gender and Development
-                    initiatives that promote inclusiveness and representation in
-                    computing and technology-related fields
-                  </p>
-                  <p className="italic text-textgray pl-4 text-sm">
-                    – Awarded as Outstanding Student GADvocate
-                  </p>
-                  <p className="italic text-textgray pl-4">
-                    – Leadership Award (2023 – 2024)
-                  </p>
-                  <p className="italic text-textgray pl-4 text-sm">
-                    – Recognized for contribution and compliance for the Peace
-                    and Development Campaign of Don Honorio Ventura State
-                    University (2023 -2024)
-                  </p>
-                </div>
-
-                <div>
-                  <h2 className="font-bold text-lg text-rusty">
-                    College of Computing Studies Gender and Development
-                    Committee
-                    <span className="text-textgray font-medium">
-                      {" "}
-                      (2022 – 2024)
-                    </span>
-                  </h2>
-                  <p className="italic font-semibold text-textgray">
-                    Head Director
-                  </p>
-                  <p className="italic text-textgray pl-4 text-sm">
-                    – Provided strategic leadership to the GAD Committee by
-                    setting goals, managing timelines, and delegating tasks to
-                    ensure effective execution of advocacy initiatives.
-                  </p>
-                </div>
-              </div>
-            )}
-
-            {/* CONTACTS */}
-            {activeTab === "contacts" && (
-              <div className="flex flex-col gap-5">
-                <p className="font-cherry text-2xl text-royalpink">
-                  Let’s work together!
-                </p>
-
-                <div className="flex items-center gap-4">
-                  <Phone className="text-royalpink" />
-                  <span>+63 921 745 3908</span>
-                </div>
-
-                <div className="flex items-center gap-4">
-                  <Mail className="text-royalpink" />
-                  <span>ifatiffany@gmail.com</span>
-                </div>
-
-                <div className="flex items-center gap-4">
-                  <Facebook className="text-royalpink" />
-                  <span>facebook.com/ifadlrs</span>
-                </div>
-
-                <div className="flex items-center gap-4">
-                  <Instagram className="text-royalpink" />
-                  <span>instagram.com/ifadlcrz</span>
-                </div>
-              </div>
-            )}
+          {/* PHONE */}
+          <div className="flex items-center gap-3 text-sm text-[#404030]">
+            <Phone size={18} />
+            <span>+63 921 745 3908</span>
           </div>
         </div>
       </div>
