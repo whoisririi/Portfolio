@@ -1,73 +1,89 @@
-# React + TypeScript + Vite
+<p align="center">
+  <img src="./banner-readme.png" alt="Banner" width="100%" />
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1 align="center">🎀 Ifa's Portfolio Website 🎀</h1>
 
-Currently, two official plugins are available:
+<p align="center">
+  <i>Designed & Developed with love, intention, and lots of pink ✨</i>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 💗 About This Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This is my personal portfolio website built to showcase my:
 
-## Expanding the ESLint configuration
+- 🎨 UX/UI Design Projects
+- 💻 Frontend Development Work
+- 🌸 Creative Experiments
+- ✨ Growth as a Computer Science student
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🔗 **Live Website:**  
+👉 https://ifafolio.vercel.app
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🌷 About Me
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+> ⋆.𐙚 ̊ I'm Ifa ⋆.𐙚 ̊
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🌸 You can call me **Ifa (Ai-fa)**  
+💗 22 years old, learning slowly & intentionally  
+🎨 Growing UX/UI Designer  
+💻 Frontend Developer  
+✨ Passionate about creating soft, meaningful digital experiences
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+📩 Reach me at: **ifatiffany@gmail.com**
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 💖 Built With
+
+<p>
+  <img src="https://img.shields.io/badge/React-ffb6c1?style=for-the-badge&logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-ffc0cb?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vite-f8bbd0?style=for-the-badge&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/TailwindCSS-fce4ec?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/Lucide-ffd1dc?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Vercel-ffc1cc?style=for-the-badge&logo=vercel&logoColor=white" />
+</p>
+
+---
+
+## 🌐 Let's Connect
+
+<p>
+  <a href="https://facebook.com/ifadlrs">
+    <img src="https://img.shields.io/badge/Facebook-f8bbd0?style=for-the-badge&logo=facebook&logoColor=white" />
+  </a>
+  <a href="https://instagram.com/ifadlcz">
+    <img src="https://img.shields.io/badge/Instagram-ffb6c1?style=for-the-badge&logo=instagram&logoColor=white" />
+  </a>
+  <a href="https://linkedin.com/in/yourlinkedin">
+    <img src="https://img.shields.io/badge/LinkedIn-fce4ec?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="mailto:ifatiffany@gmail.com">
+    <img src="https://img.shields.io/badge/Email-ffd1dc?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+</p>
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=whoisririi&theme=rose_pine&hide_border=true&include_all_commits=true&count_private=true" />
+</p>
+
+<p align="center">
+  <img src="https://nirzak-streak-stats.vercel.app/?user=whoisririi&theme=rose_pine&hide_border=true" />
+</p>
+
+---
+
+<p align="center">
+  💌 Thank you for visiting my repository 💌  
+  <br>
+  <i>Built with soft energy & big dreams ✨</i>
+</p>
