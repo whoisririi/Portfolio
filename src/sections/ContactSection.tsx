@@ -77,7 +77,7 @@ const ContactSection: React.FC = () => {
             </form>
           </div>
 
-          {/* RIGHT SIDE - IMAGE */}
+          {/* Contact illustration*/}
           <div className="hidden md:flex justify-center">
             <div className="rounded-3xl">
               <img
