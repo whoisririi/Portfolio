@@ -4,9 +4,10 @@ import AboutSection from "./sections/AboutSection";
 import SoftwaresSection from "./sections/SoftwaresSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import OthersSection from "./sections/OthersSection";
-import Footer from "./sections/Footer";
+import ContactId from "./sections/ContactId";
 import FloatingNav from "./components/FloatingNav";
 import ContactSection from "./sections/ContactSection";
+import Footer from "./sections/Footer";
 
 function App() {
   return (
@@ -27,8 +28,9 @@ function App() {
       <section id="others">
         <OthersSection />
       </section>
-      <Footer />
+      <ContactId />
       <ContactSection />
+      <Footer />
     </>
   );
 }
