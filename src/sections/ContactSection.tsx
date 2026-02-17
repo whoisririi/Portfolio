@@ -83,7 +83,7 @@ const ContactSection: React.FC = () => {
               <img
                 src={ContactImg}
                 alt="Contact Illustration"
-                className="w-[413px] h-[413px] mt-[130px] shadow-lg"
+                className="w-[344px] h-[344px] mt-[130px] shadow-lg rounded-2xl"
               />
             </div>
           </div>
