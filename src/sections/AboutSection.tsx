@@ -33,7 +33,7 @@ const AboutSection = () => {
 
           {/* RESUME BUTTON */}
           <a
-            href="/RESUME.pdf"
+            href={`${import.meta.env.BASE_URL}RESUME.pdf`}
             download="Ifa_Dela_Rosa_Resume.pdf"
             className="w-fit px-6 py-2 border border-royalpink text-royalpink rounded-full font-source font-semibold hover:bg-royalpink hover:text-white transition"
           >
