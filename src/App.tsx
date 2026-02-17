@@ -6,6 +6,7 @@ import ProjectsSection from "./sections/ProjectsSection";
 import OthersSection from "./sections/OthersSection";
 import Footer from "./sections/Footer";
 import FloatingNav from "./components/FloatingNav";
+import ContactSection from "./sections/ContactSection";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <OthersSection />
       </section>
       <Footer />
+      <ContactSection />
     </>
   );
 }
