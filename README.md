@@ -20,7 +20,7 @@ This is my personal portfolio website built to showcase my:
 - ✨ Growth as a Computer Science student
 
 🔗 **Live Website:**  
-👉 https://ifafolio.vercel.app
+💗 [https://whoisririi.github.io/Portfolio/](https://whoisririi.github.io/Portfolio/)
 
 ---
 
