@@ -1,5 +1,5 @@
 import React from "react";
-import ContactImg from "../assets/images/Instagram.jpg";
+import ContactImg from "../assets/images/Contact.jpg";
 
 const ContactSection: React.FC = () => {
   return (
@@ -42,6 +42,7 @@ const ContactSection: React.FC = () => {
               className="w-full bg-white/70 backdrop-blur-sm px-4 py-3 rounded-xl shadow-sm outline-none border border-transparent focus:border-[#C97C8A] focus:ring-2 focus:ring-[#F3C6CF] transition resize-none"
             />
 
+            {/* TO REVISE*/}
             <button
               type="button"
               className="w-full bg-lightpink text-[#5a4c51] outline-[#CE6B8B] text-xl font-semibold font-cherry tracking-[0.3em] py-3 rounded-xl shadow-md hover:bg-royalpink hover:text-white hover:outline-dirtywhite hover:outline-2 active:scale-[0.98] transition-all duration-200"
